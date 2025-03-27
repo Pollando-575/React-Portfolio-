@@ -67,49 +67,49 @@ export default function Contact() {
           className="mb-12 bg-white p-6 rounded-lg shadow-md"
           variants={containerVariants}
         >
-          <h3 className="text-xl font-semibold mb-8 text-center">Get in Touch</h3>
+          <h3 className="text-4xl font-bold mb-12 text-center text-blue-600">
+            Get in Touch
+          </h3>
           
           {/* Social Media Icons Section */}
-          <div className="flex flex-col items-center space-y-16">
+          <div className="flex flex-col items-center space-y-24">
             {/* Email section */}
-            <div className="text-center">
-              <div className="flex justify-center mb-4">
-                <SiGmail className="text-[8rem] text-red-600 hover:scale-110 transition-duration-300" />
-              </div>
-              <a 
-                href="mailto:maxtakhar.contact@gmail.com"
-                className="text-xl hover:text-blue-600 transition-all"
-              >
+            <motion.a 
+              href="mailto:maxtakhar.contact@gmail.com"
+              className="flex flex-col items-center group"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+            >
+              <SiGmail className="text-[8rem] text-red-600 group-hover:text-red-700 transition-colors" />
+              <span className="mt-4 text-lg font-medium text-gray-700 group-hover:text-red-600 transition-colors">
                 maxtakhar.contact@gmail.com
-              </a>
-            </div>
+              </span>
+            </motion.a>
 
-            {/* Social media icons in one row */}
-            <div className="flex justify-center space-x-32">
-              <motion.a 
-                href="https://www.linkedin.com/in/maxtakhar/" 
-                target="_blank" 
-                rel="noreferrer"
-                className="flex flex-col items-center"
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.3 }}
-              >
-                <FaLinkedin className="text-[12rem] text-blue-600 hover:text-blue-700" />
-                <span className="mt-4 text-lg font-medium">LinkedIn</span>
-              </motion.a>
-              
-              <motion.a 
-                href="https://github.com/Pollando-575" 
-                target="_blank" 
-                rel="noreferrer"
-                className="flex flex-col items-center"
-                whileHover={{ scale: 1.1 }}
-                transition={{ duration: 0.3 }}
-              >
-                <FaGithub className="text-[12rem] text-gray-800 hover:text-gray-900" />
-                <span className="mt-4 text-lg font-medium">GitHub</span>
-              </motion.a>
-            </div>
+            {/* Social media icons */}
+            <motion.a 
+              href="https://github.com/Pollando-575" 
+              target="_blank" 
+              rel="noreferrer"
+              className="flex flex-col items-center"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+            >
+              <FaGithub className="text-[8rem] text-gray-800 hover:text-gray-900" />
+              <span className="mt-4 text-lg font-medium">GitHub</span>
+            </motion.a>
+
+            <motion.a 
+              href="https://www.linkedin.com/in/maxtakhar/" 
+              target="_blank" 
+              rel="noreferrer"
+              className="flex flex-col items-center"
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.3 }}
+            >
+              <FaLinkedin className="text-[8rem] text-blue-600 hover:text-blue-700" />
+              <span className="mt-4 text-lg font-medium">LinkedIn</span>
+            </motion.a>
           </div>
         </motion.div>
 
