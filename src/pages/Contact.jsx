@@ -67,7 +67,7 @@ export default function Contact() {
           className="mb-12 bg-white p-6 rounded-lg shadow-md"
           variants={containerVariants}
         >
-          <h3 className="text-xl font-semibold mb-6 text-center">Get in Touch</h3>
+          <h3 className="text-xl font-semibold mb-8 text-center">Get in Touch</h3>
           
           {/* Social Media Icons Section */}
           <div className="flex flex-col items-center space-y-16">
